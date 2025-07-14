@@ -1,0 +1,17 @@
+// esquema de posible tabla de product en la BD
+export interface Product {
+    //id:string;
+    description: string;
+    images: string[];
+    inStock: number;
+    price: number;
+    sizes: Size[];
+    slug: string;
+    tags: string[];
+    title: string;
+    type: ValidType;
+    gender: ValidCategory;
+}
+export type ValidCategory = 'desktop'|'laptop'|'all-in-one'|'impresora';
+export type Size = 'XS'|'S'|'M'|'L'|'XL'|'XXL'|'XXXL';
+export type ValidType = 'shirts'|'pants'|'hoodies'|'hats';
