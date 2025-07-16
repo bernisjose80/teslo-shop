@@ -1,5 +1,4 @@
-import Image from "next/image";
-import { titleFont, inter } from "@/config/fonts";
+//import { titleFont } from "@/config/fonts";
 import { ProductGrid, Title } from "@/components";
 import { initialData } from "@/seed/seed";
 

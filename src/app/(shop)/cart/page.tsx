@@ -1,6 +1,6 @@
 import { QuantitySelector, Title } from "@/components";
 import { initialData } from "@/seed/seed";
-import { redirect } from "next/navigation";
+//import { redirect } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -10,7 +10,7 @@ const productsIncart = [
   initialData.products[2],
 ];
 
-export default function () {
+export default function Cartpage() {
   //redirect("/empty");
 
   return (

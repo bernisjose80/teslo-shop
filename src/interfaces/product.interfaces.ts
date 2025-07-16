@@ -12,6 +12,6 @@ export interface Product {
     type: ValidType;
     gender: ValidCategory;
 }
-export type ValidCategory = 'desktop'|'laptop'|'all-in-one'|'impresora';
+export type ValidCategory = 'desktop'|'laptop'|'all_in_one'|'impresora';
 export type Size = 'XS'|'S'|'M'|'L'|'XL'|'XXL'|'XXXL';
 export type ValidType = 'shirts'|'pants'|'hoodies'|'hats';

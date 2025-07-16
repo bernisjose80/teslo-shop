@@ -8,7 +8,7 @@ interface SeedProduct {
     tags: string[];
     title: string;
     type: ValidTypes;
-    gender: 'desktop'|'laptop'|'all-in-one'|'impresora'
+    gender: 'desktop'|'laptop'|'all_in_one'|'impresora'
 }
 
 type ValidSizes = 'XS'|'S'|'M'|'L'|'XL'|'XXL'|'XXXL';
@@ -143,7 +143,7 @@ export const initialData: SeedData = {
             type: 'shirts',
             tags: ['shirt'],
             title: "HP L3N90AV 23 All in One 800 G2",
-            gender: 'all-in-one'
+            gender: 'all_in_one'
         },
         {
             description: "Con factor de forma reducido este computador le permite ocupar menos espacio y su combinacion de rendimiento es la combinacion perfecta entre un buen diseño y alta productividad. Equipado con un procesador Intel de 7ma generacion I5 con memorias ddr4 de 8gb y disco de duro de la mas nueva tecnologia SSD viene a ser ideal para desplegar las aplicaciones de ofimatica y sistemas CRM en tu negocio o pequeña empresa. Asi mismo llega a obtener un plus en su procesamiento de tareas por la condicion de frecuencia turbo boost llegando alcanzar hasta 3.50 Ghz. Garantia 90 dias",
@@ -338,7 +338,7 @@ export const initialData: SeedData = {
             type: 'hoodies',
             tags: ['hoodie'],
             title: "Chill Pullover Hoodie",
-            gender: 'all-in-one'
+            gender: 'all_in_one'
         },
         {
             description: "Introducing the Tesla Chill Collection. The Men's Chill Full Zip Hoodie has a premium, heavyweight exterior and soft fleece interior for comfort in any season. The hoodie features subtle thermoplastic polyurethane Tesla logos on the left chest and sleeve, a double layer single seam hood and pockets with custom matte zipper pulls. Made from 60% cotton and 40% recycled polyester.",
@@ -398,7 +398,7 @@ export const initialData: SeedData = {
             type: 'hoodies',
             tags: ['hoodie'],
             title: "3D Large Wordmark Pullover Hoodie",
-            gender: 'all-in-one'
+            gender: 'all_in_one'
         },
         {
             description: "As with the iconic Tesla logo, the Cybertruck Graffiti Hoodie is a classic in the making. Unisex style featuring soft fleece and an adjustable, jersey-lined hood for comfortable coverage.",
@@ -413,7 +413,7 @@ export const initialData: SeedData = {
             type: 'hoodies',
             tags: ['hoodie'],
             title: "Cybertruck Graffiti Hoodie",
-            gender: 'all-in-one'
+            gender: 'all_in_one'
         },
         {
             description: "The Relaxed T Logo Hat is a classic silhouette combined with modern details, featuring a 3D T logo and a custom metal buckle closure. The ultrasoft design is flexible and abrasion resistant, while the inner sweatband includes quilted padding for extra comfort and moisture wicking. The visor is fully made from recycled plastic bottles. 100% Cotton.",
@@ -428,7 +428,7 @@ export const initialData: SeedData = {
             type: 'hats',
             tags: ['hats'],
             title: "Relaxed T Logo Hat",
-            gender: 'all-in-one'
+            gender: 'all_in_one'
         },
         {
             description: "The Relaxed T Logo Hat is a classic silhouette combined with modern details, featuring a 3D T logo and a custom metal buckle closure. The ultrasoft design is flexible and abrasion resistant, while the inner sweatband includes quilted padding for extra comfort and moisture wicking. The visor is fully made from recycled plastic bottles. 100% Cotton.",
@@ -443,7 +443,7 @@ export const initialData: SeedData = {
             type: 'hats',
             tags: ['hats'],
             title: "Thermal Cuffed Beanie",
-            gender: 'all-in-one'
+            gender: 'all_in_one'
         },
         {
             description: "The Women's Cropped Puffer Jacket features a uniquely cropped silhouette for the perfect, modern style while on the go during the cozy season ahead. The puffer features subtle silicone injected Tesla logos below the back collar and on the right sleeve, custom matte metal zipper pulls and a soft, fleece lined collar. Made from 87% nylon and 13% polyurethane.",

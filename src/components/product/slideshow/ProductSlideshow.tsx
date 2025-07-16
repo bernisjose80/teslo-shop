@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 
 // Import Swiper Object
 import { Swiper as SwiperObject } from "swiper";
@@ -45,7 +45,7 @@ export const ProductSlideshow = ({ images, title, className }: Props) => {
         className="mySwiper2"
       >
         {images.map((image) => (
-          <SwiperSlide>
+          <SwiperSlide key={`/products/${image}`}>
             <Image
               width={1024}
               height={800}
@@ -67,7 +67,7 @@ export const ProductSlideshow = ({ images, title, className }: Props) => {
         className="mySwiper"
       >
         {images.map((image) => (
-          <SwiperSlide>
+          <SwiperSlide key={`/products/${image}`}>
             <Image
               width={300}
               height={300}

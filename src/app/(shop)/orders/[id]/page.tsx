@@ -1,7 +1,7 @@
 import { Title } from "@/components";
 import { initialData } from "@/seed/seed";
 import Image from "next/image";
-import Link from "next/link";
+//import Link from "next/link";
 import clsx from "clsx";
 import { IoCardOutline } from "react-icons/io5";
 
@@ -12,12 +12,10 @@ const productsIncart = [
 ];
 
 interface Props {
-  params: {
-    id: string;
-  };
+  params: Promise<{ id: string }>;
 }
 
-export default async function ({ params }: Props) {
+export default async function Pageordersid({ params }: Props) {
   const { id } = await params;
 
   // Todo Verificar

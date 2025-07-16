@@ -3,6 +3,7 @@ import Link from "next/link";
 import { titleFont } from "@/config/fonts";
 import { IoSearchOutline, IoCartOutline } from "react-icons/io5";
 import { useUIStore } from "@/store";
+import Image from "next/image";
 
 export default function TopMenu() {
   const openMenu = useUIStore((state) => state.OpenSideMenu);
@@ -11,11 +12,14 @@ export default function TopMenu() {
     <nav className="flex px-5 justify-between items-center w-full">
       {/*Logo */}
       <div className="flex items-center">
-        <img
+        <Image
           className="mr-2"
           src="/imgs/62x42 logo nube tic.jpg"
           alt="Logo de la empresa"
-        ></img>
+          width={70}
+          height={50}
+        ></Image>
+
         <Link href="/">
           <span
             className={`${titleFont.className} antialiased font-bold text-blue-600`}
@@ -42,7 +46,7 @@ export default function TopMenu() {
         </Link>
         <Link
           className="text-blue-600 m-2 p-2 rounded-md transition-all hover:bg-gray-100"
-          href="/category/all-in-one"
+          href="/category/all_in_one"
         >
           All-in-One
         </Link>

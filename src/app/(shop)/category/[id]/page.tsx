@@ -4,19 +4,17 @@ import { ProductGrid, Title } from "@/components";
 import { ValidCategory } from "@/interfaces";
 
 interface Props {
-  params: {
-    id: ValidCategory;
-  };
+  params: Promise<{ id: ValidCategory }>;
 }
 
-export default async function ({ params }: Props) {
+export default async function Categorypage({ params }: Props) {
   const { id } = await params;
-  const array = ["desktop", "laptop", "all-in-one", "impresora"];
+  const array = ["desktop", "laptop", "all_in_one", "impresora"];
 
   const labels: Record<ValidCategory, string> = {
     desktop: "Escritorio",
     laptop: "Portatiles",
-    "all-in-one": "Todo en Uno",
+    all_in_one: "Todo en Uno",
     impresora: "Impresoras",
   };
   const products = initialData.products.filter(

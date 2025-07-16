@@ -9,12 +9,10 @@ import {
 } from "@/components";
 
 interface Props {
-  params: {
-    slug: string;
-  };
+  params: Promise<{ slug: string }>;
 }
 
-export default async function ({ params }: Props) {
+export default async function Pageslug({ params }: Props) {
   const { slug } = await params;
   const product = initialData.products.find((product) => product.slug === slug);
 
