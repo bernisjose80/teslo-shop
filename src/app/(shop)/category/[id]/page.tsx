@@ -9,13 +9,14 @@ interface Props {
 
 export default async function Categorypage({ params }: Props) {
   const { id } = await params;
-  const array = ["desktop", "laptop", "all_in_one", "impresora"];
+  const array = ["desktop", "laptop", "monitor", "impresora", "otros"];
 
   const labels: Record<ValidCategory, string> = {
     desktop: "Escritorio",
     laptop: "Portatiles",
-    all_in_one: "Todo en Uno",
+    monitor: "Monitores",
     impresora: "Impresoras",
+    otros: "Otros",
   };
   const products = initialData.products.filter(
     (product) => product.gender === id

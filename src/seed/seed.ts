@@ -8,7 +8,7 @@ interface SeedProduct {
     tags: string[];
     title: string;
     type: ValidTypes;
-    gender: 'desktop'|'laptop'|'all_in_one'|'impresora'
+    gender: 'desktop'|'laptop'|'monitor'|'impresora'|'otros'
 }
 
 type ValidSizes = 'XS'|'S'|'M'|'L'|'XL'|'XXL'|'XXXL';
@@ -26,8 +26,8 @@ export const initialData: SeedData = {
         {
             description: "Notebook compacta, ligera y elegante de color negro mate. Es la combinación perfecta entre elegancia y productividad. Modelo Latitude.Se compone por un procesador Intel Core I3 7020u, Memoria ram 8gb DDR4, Disco Duro SSD 128gb, Pantalla HD 14 pulgadas, Red Ethernet y Wifi AC, Bateria 3 celdas, Windows 10 Pro, Garantia: 90 dias ",
             images: [
-                'dell_latitude_3300_1.jpg',
-                'dell_latitude_3300_2.jpg',                
+                'dell_latitude_3300_3.jpg',
+                'dell_latitude 3300_4.jpg',                
             ],
             inStock: 2,
             price: 280,
@@ -103,8 +103,8 @@ export const initialData: SeedData = {
         {
             description: "Designed for comfort, the Cybertruck Owl Tee is made from 100% cotton and features our signature Cybertruck icon on the back.",
             images: [
-                'laptop_lenovo_3i_2.jpg',
-                'laptop_lenovo_3i_1.jpg',
+                'laptop_82xboolus_2.jpg',
+                'laptop_82xboolus_1.jpg',
             ],
             inStock: 0,
             price: 495,
@@ -118,8 +118,8 @@ export const initialData: SeedData = {
         {
             description: "Disfrute de un rendimiento ágil y silencioso, con procesadores Intel® Core™ de 12.ª generación combinados con opciones de PCIe SSD.Disfrute de teclas de mayor tamaño y de un amplio panel táctil para desplazarse con facilidad por el contenido. El chip gráfico Intel Iris Xe te permitira ejecutar aplicaciones altamente productiva. La mejor combinacion de poder y elegancia la obtienes con este precioso modelo de Dell. Garantia 12 meses.",
             images: [
-                'laptop_dell_inspiron_i7_1.jpg',
-                'laptop_dell_inspiron_i7_2.jpg',
+                'dell_inspiron_15_3520_1.jpg',
+                'dell_inspiron_15_3520_2.jpg',
             ],
             inStock: 15,
             price: 950,
@@ -133,17 +133,17 @@ export const initialData: SeedData = {
         {
             description: "Reune lo mejor en cuanto a productividad, comodidad y estetica. Este ordenador todo en uno viene equipado con una pantalla de 23 pulgadas lo que te permite desplegar aplicaciones donde debes notar los ultimos detalles de una imagen. Configurado con un procesador Intel I5 6500 de sexta generacion puedes darle un uso productivo y profesional. Tiene 8gb DDR4 de Ram y cuenta con 2 disco duros, donde reside el sistema operativo de 128gb SSD y uno auxiliar de 500GB para respaldar tu información. Su elegancia y compactibilidad hacen de este equipo ideal para su empresa y oficina. Incluye garantia por 90 dias",
             images: [
-                'all_in_one_L3n90AV_1.jpg',
-                'all_in_one_L3n90AV_2.jpg',
+                'all_in_one_L3n90AV_3.jpg',
+                'all_in_one_L3n90AV_4.jpg',
             ],
             inStock: 17,
-            price: 35,
+            price: 320,
             sizes: ['XS','S','XL','XXL'],
             slug: "men_let_the_sun_shine_tee",
             type: 'shirts',
             tags: ['shirt'],
             title: "HP L3N90AV 23 All in One 800 G2",
-            gender: 'all_in_one'
+            gender: 'laptop'
         },
         {
             description: "Con factor de forma reducido este computador le permite ocupar menos espacio y su combinacion de rendimiento es la combinacion perfecta entre un buen diseño y alta productividad. Equipado con un procesador Intel de 7ma generacion I5 con memorias ddr4 de 8gb y disco de duro de la mas nueva tecnologia SSD viene a ser ideal para desplegar las aplicaciones de ofimatica y sistemas CRM en tu negocio o pequeña empresa. Asi mismo llega a obtener un plus en su procesamiento de tareas por la condicion de frecuencia turbo boost llegando alcanzar hasta 3.50 Ghz. Garantia 90 dias",
@@ -152,7 +152,7 @@ export const initialData: SeedData = {
                 'I5_Y3A10AV_2.jpg',
             ],
             inStock: 12,
-            price: 35,
+            price: 200,
             sizes: ['XS','S','M'],
             slug: "men_3d_large_wordmark_tee",
             type: 'shirts',
@@ -167,7 +167,7 @@ export const initialData: SeedData = {
                 'hp_prodesk_i7_2.jpg',
             ],
             inStock: 5,
-            price: 35,
+            price: 250,
             sizes: ['XS','S'],
             slug: "men_3d_t_logo_tee",
             type: 'shirts',
@@ -182,7 +182,7 @@ export const initialData: SeedData = {
                 'optiplex_9020_1.jpg',
             ],
             inStock: 2,
-            price: 35,
+            price: 160,
             sizes: ['XS','S','M'],
             slug: "men_3d_small_wordmark_tee",
             type: 'shirts',
@@ -197,7 +197,7 @@ export const initialData: SeedData = {
                 'laptop_lenovo_82qd00gnus_i5_2.jpg',
             ],
             inStock: 82,
-            price: 35,
+            price: 590,
             sizes: ['XS','S','M','L','XL','XXL'],
             slug: "men_plaid_mode_tee",
             type: 'shirts',
@@ -206,115 +206,115 @@ export const initialData: SeedData = {
             gender: 'laptop'
         },
         {
-            description: "Inspired by our popular home battery, the Tesla Powerwall Tee is made from 100% cotton and features the phrase 'Pure Energy' under our signature logo in the back. Designed for fit, comfort and style, the exclusive tee promotes sustainable energy in any environment.",
+            description: "Ensamblados en nuestras instalaciones esta configuracion de Desktop reune las caracteristicas para un usuario que exige un buen perfomance combinada con un presupuesto accesible. Cuenta con procesador de la marca Intel linea I3 de 11va generacion, Tarjeta Madre chip intel H510M, Memoria Ram 8gb DDR4, Disco duro de 256gb SSD y un Case con fuente de 600w. Partes y piezas totalmente nuevas que en conjunto con un sistema operativo Windows 11 te va permitir instalar las aplicaciones exigentes que en tus labores diarias requieres para realizar un trabajo altamente productivo. Garantia 6 meses",
             images: [
-                '9877034-00-A_0_2000.jpg',
-                '9877034-00-A_2.jpg',
+                'desktop i3 clon.jpg',
+                'logo i3.jpg',
             ],
             inStock: 24,
-            price: 35,
+            price: 270,
             sizes: ['XL','XXL'],
             slug: "men_powerwall_tee",
             type: 'shirts',
             tags: ['shirt'],
-            title: "Men's Powerwall Tee",
-            gender: 'laptop'
+            title: "Desktop Intel I3 11va Gen Nuevo",
+            gender: 'desktop'
         },
         {
-            description: "Inspired by Tesla Battery Day and featuring the unveiled tabless battery cell, Battery Day Tee celebrates the future of energy storage and cell manufacturing. Designed for fit, comfort and style, Battery Day Tee is made from 100% cotton with a stylized cell printed across the chest. Made in Peru.",
+            description: "Ensamblados en nuestras instalaciones esta configuracion de Desktop reune las caracteristicas para un usuario que necesita un alto perfomance. Cuenta con procesador de la marca Intel I5 de 11va generacion, Tarjeta Madre chip intel H510M, Memoria Ram 8gb DDR4, Disco duro de 256gb SSD y un Case con fuente de 600w. Partes y piezas totalmente nuevas que en conjunto con un sistema operativo Windows 11 te va permitir instalar las aplicaciones exigentes que en tus labores diarias requieres para realizar un trabajo altamente productivo. Garantia 6 meses",
             images: [
-                '1633802-00-A_0_2000.jpg',
-                '1633802-00-A_2.jpg',
+                'desktop i5 clon.jpg',
+                'logo i5.jpg',
             ],
             inStock: 5,
-            price: 30,
+            price: 290,
             sizes: ['XS','S','XXL'],
             slug: "men_battery_day_tee",
             type: 'shirts',
             tags: ['shirt'],
-            title: "Men's Battery Day Tee",
-            gender: 'laptop'
+            title: "Desktop Intel I5 11va Gen Nuevo",
+            gender: 'desktop'
         },
         {
-            description: "Designed for exceptional comfort and inspired by the Cybertruck unveil event, the Cybertruck Bulletproof Tee is made from 100% cotton and features our signature Cybertruck icon on the back.",
+            description: "Ensamblados en nuestras instalaciones esta configuracion de Desktop reune las caracteristicas para un usuario que necesita un alto perfomance.Ideal para aplicaciones de diseño gráfico. Cuenta con procesador de la marca Intel I7 de 11va generacion, Tarjeta Madre chip intel H510M, Memoria Ram 8gb DDR4, Disco duro de 256gb SSD y un Case con fuente de 600w. Partes y piezas totalmente nuevas que en conjunto con un sistema operativo Windows 11 te va permitir instalar las aplicaciones exigentes que en tus labores diarias requieres para realizar un trabajo altamente productivo. Garantia 6 meses",
             images: [
-                '7654399-00-A_0_2000.jpg',
-                '7654399-00-A_1.jpg',
+                'desktop i7 clon.jpg',
+                'logo i7.jpg',
             ],
             inStock: 150,
-            price: 30,
+            price: 325,
             sizes: ['M','L'],
             slug: "men_cybertruck_bulletproof_tee",
             type: 'shirts',
             tags: ['shirt'],
-            title: "Men’s Cybertruck Bulletproof Tee",
+            title: "Desktop Intel I7 11va Gen Nuevo",
             gender: 'desktop'
         },
         {
-            description: "Inspired by the Model Y order confirmation graphic, the limited edition Haha Yes Tee is designed for comfort and style. Made from 100% Peruvian cotton and featuring the Tesla wordmark across the chest, the exclusive tee will commemorate your order for years to come.",
+            description: "La nueva impresora multifuncional PIXMA G4110 proporciona la capacidad de imprimir, copiar, escanear y enviar fax. Asimismo, tiene un alimentador automático de documentos de 20 hojas y una pantalla LCD de 2 líneas. Esta impresora proporciona muchas de las funciones populares que se encuentran en los modelos anteriores tal como el sistema de tinta híbrido integrado, diseño compacto y capacidades de impresión sin bordes.",
             images: [
-                '7652410-00-A_0.jpg',
-                '7652410-00-A_1_2000.jpg',
+                'CANON 4110_2.jpg',
+                'CANON 4110.jpg',
             ],
             inStock: 10,
-            price: 35,
+            price: 350,
             sizes: ['XS','S','M','L','XL','XXL'],
             slug: "men_haha_yes_tee",
             type: 'shirts',
             tags: ['shirt'],
-            title: "Men's Haha Yes Tee",
-            gender: 'desktop'
+            title: "Multifuncional Canon G4110 Tinta Continua",
+            gender: 'impresora'
         },
         {
-            description: "Designed for fit, comfort and style, the limited edition S3XY Tee is made from 100% cotton with a 3D silicone-printed “S3XY” logo across the chest. Made in Peru. Available in black.",
+            description: "La impresora multifuncional Canon MF3010vp proporciona la capacidad de imprimir, copiar, escanear.Esta impresora proporciona todas las funciones ideales para estar en una oficina. Es de impresion rapida y de alta eficiencia energetica. Una de sus fortalezas es que el toner es altamente rendidor y economico.Llegando a imprimir hasta 1800 paginas por cartucho de toner. A pesar de que su impresion es solo monocromatica imprime con gran nitidez los graficos. Cuenta con la garantia Canon de 12 meses.",
             images: [
-                '8764600-00-A_0_2000.jpg',
-                '8764600-00-A_2.jpg',
+                'canon mf3010vp.jpg',
+                'canon mf3010vp_2.jpg',
             ],
             inStock: 34,
-            price: 35,
+            price: 220,
             sizes: ['XS','S','M','L'],
             slug: "men_s3xy_tee",
             type: 'shirts',
             tags: ['shirt'],
-            title: "Men's S3XY Tee",
-            gender: 'desktop'
+            title: "Multifuncional Canon MF3010vp Laser",
+            gender: 'impresora'
         },
         {
-            description: "Designed for fit, comfort and style, the Men's 3D Wordmark Long Sleeve Tee is made from 100% cotton and features an understated wordmark logo on the left chest.",
+            description: "La Impresora inalámbrica 1250 económica para familias y estudiantes. Ofrece costos de impresión ultrabajos gracias al sistema EcoTank de Epson que imprime 4.500 páginas a blanco y negro ó 7.500 páginas a color por cada juego de botellas de repuesto. Diseñada para integrarse en su estilo de vida, está totalmente conectada con Wi-Fi, Wi-Fi Direct, y ofrece funciones de impresión móvil y copia/escaneo con cámara a través de la nueva aplicación Epson Smart Panel, además de ser compatible con la operación por voz a través de Alexa.",
             images: [
-                '8764813-00-A_0_2000.jpg',
-                '8764813-00-A_1.jpg',
+                'epson l1250.jpg',
+                'epson l1250_2.jpg',
             ],
             inStock: 15,
-            price: 40,
+            price: 240,
             sizes: ['XL','XXL'],
             slug: "men_3d_wordmark_long_sleeve_tee",
             type: 'shirts',
             tags: ['shirt'],
-            title: "Men's 3D Wordmark Long Sleeve Tee",
-            gender: 'desktop'
+            title: "Impresora Epson L1250 Tinta Continua",
+            gender: 'impresora'
         },
         {
-            description: "Designed for fit, comfort and style, the Men's 3D T Logo Long Sleeve Tee is made from 100% cotton and features an understated T logo on the left chest.",
+            description: "La Impresora multifuncional 3 en 1 Epson EcoTank L3251 ofrece a las familias, estudiantes y profesionales un costo de impresión ultra bajo, que te permite imprimir hasta 4.500 páginas en negro o 7.500 páginas a color con cada juego de botellas de repuesto. La EcoTank L3251 ofrece total confiabilidad gracias a la tecnología Heat-Free de Epson, además de una experiencia de recarga fácil, limpia y sin errores con la tecnología EcoFitTM. Diseñado para integrarse en su estilo de vida, está completamente conectado con WiFi, WiFi Direct® y capacidades de impresión móvil a través de la nueva e intuitiva aplicación Epson Smart Panel y cuenta con un diseño de tanque frontal súper compacto que ocupa poco espacio y permite verificar fácilmente los niveles de tinta. ",
             images: [
-                '8529198-00-A_0_2000.jpg',
-                '8529198-00-A_1.jpg',
+                'epson_l3251.jpg',
+                'epson_l3251_2.jpg',
             ],
             inStock: 12,
-            price: 40,
+            price: 300,
             sizes: ['XS','XXL'],
             slug: "men_3d_t_logo_long_sleeve_tee",
             type: 'shirts',
             tags: ['shirt'],
-            title: "Men's 3D T Logo Long Sleeve Tee",
-            gender: 'desktop'
+            title: "Multifuncional Epson L3251 Tinta Continua",
+            gender: 'impresora'
         },
         {
-            description: "Introducing the Tesla Raven Collection. The Men's Raven Lightweight Hoodie has a premium, relaxed silhouette made from a sustainable bamboo cotton blend. The hoodie features subtle thermoplastic polyurethane Tesla logos across the chest and on the sleeve with a french terry interior for versatility in any season. Made from 70% bamboo and 30% cotton.",
+            description: "La Canon LBP6030w es una impresora láser monocromática inalámbrica, ideal para uso doméstico y pequeñas oficinas. Ofrece impresión rápida y eficiente con conectividad Wi-Fi para imprimir desde dispositivos móviles. Su diseño compacto y bajo consumo energético la hacen una opción atractiva para espacios reducidos y para ahorrar costos. Ofrece velocidades de impresión de hasta 19 páginas por minuto. Tiene una bandeja de entrada para 150 hojas. Toner con capacidad para 1800 paginas. Garantia Canon por 12 meses",
             images: [
-                '1740245-00-A_0_2000.jpg',
-                '1740245-00-A_1.jpg',
+                'lbp6030w canon.jpg',
+                'lbp6030w canon_2.jpg',
             ],
             inStock: 10,
             price: 115,
@@ -322,29 +322,29 @@ export const initialData: SeedData = {
             slug: "men_raven_lightweight_hoodie",
             type: 'hoodies',
             tags: ['hoodie'],
-            title: "Men's Raven Lightweight Hoodie",
-            gender: 'desktop'
+            title: "Impresora Canon LBP6030W Laser",
+            gender: 'impresora'
         },
         {
-            description: "Introducing the Tesla Chill Collection. The Chill Pullover Hoodie has a premium, heavyweight exterior and soft fleece interior for comfort in any season. The unisex hoodie features subtle thermoplastic polyurethane Tesla logos across the chest and on the sleeve, a double layer single seam hood and pockets with custom matte zipper pulls. Made from 60% cotton and 40% recycled polyester.",
+            description: "Impresora Todo-en-Uno HP Smart Tank 520 equipado con puerto 1 Hi-Speed USB 2.0, no posee capacidad inalambrica. Puede realizar copias en resoluciones de 600 x 600 ppp tanto en negro como en color. Capacidad de memoria de 64 gb. Puede imprimir en diferentes formatos de papel como: Papel común, papeles fotográficos HP, papel profesional o para folleto mate HP, papel mate presentación HP, papel profesional o para folletos brillante HP, otros papeles para inyección de tinta fotográficos, otros papeles mate para inyección de tinta, otros papeles para inyección de tinta brillante, Hagaki para inyección de tinta, papel común, grueso, papel para folleto en tríptico HP, papel común, ligero/reciclado. En cuanto a las tintas viene con 1 botella de negro y 3 de color (cyan, mangenta, yellow). Garantia HP de 12 meses",
             images: [
-                '1740051-00-A_0_2000.jpg',
-                '1740051-00-A_1.jpg',
+                'smart tank 520.jpg',
+                'smart tank 520_2.jpg',
             ],
             inStock: 10,
-            price: 130,
+            price: 240,
             sizes: ['XS','S','M','L','XL','XXL'],
             slug: "chill_pullover_hoodie",
             type: 'hoodies',
             tags: ['hoodie'],
-            title: "Chill Pullover Hoodie",
-            gender: 'all_in_one'
+            title: "Impresora HP Smart Tank 520 Tinta Continua",
+            gender: 'impresora'
         },
         {
             description: "Introducing the Tesla Chill Collection. The Men's Chill Full Zip Hoodie has a premium, heavyweight exterior and soft fleece interior for comfort in any season. The hoodie features subtle thermoplastic polyurethane Tesla logos on the left chest and sleeve, a double layer single seam hood and pockets with custom matte zipper pulls. Made from 60% cotton and 40% recycled polyester.",
             images: [
-                '1741111-00-A_0_2000.jpg',
-                '1741111-00-A_1.jpg',
+                'monitor_xiaomi_a27i.jpg',
+                'monitor_xiaomi_a27i_2.jpg',
             ],
             inStock: 100,
             price: 85,
@@ -352,14 +352,14 @@ export const initialData: SeedData = {
             slug: "men_chill_full_zip_hoodie",
             type: 'shirts',
             tags: ['shirt'],
-            title: "Men's Chill Full Zip Hoodie",
-            gender: 'desktop'
+            title: "Monitor 27 pulg Xiaomi A27i",
+            gender: 'monitor'
         },
         {
             description: "Introducing the Tesla Chill Collection. The Men’s Chill Quarter Zip Pullover has a premium, heavyweight exterior and soft fleece interior for comfort in any season. The pullover features subtle thermoplastic polyurethane Tesla logos on the left chest and below the back collar, as well as a custom matte zipper pull. Made from 60% cotton and 40% recycled polyester.",
             images: [
-                '1740140-00-A_0_2000.jpg',
-                '1740140-00-A_1.jpg',
+                'aon_endura_240.jpg',
+                'aon_endura_240_2.jpg',
             ],
             inStock: 7,
             price: 85,
@@ -367,14 +367,14 @@ export const initialData: SeedData = {
             slug: "men_chill_quarter_zip_pullover_-_gray",
             type: 'shirts',
             tags: ['shirt'],
-            title: "Men's Chill Quarter Zip Pullover - Gray",
-            gender: 'desktop'
+            title: "Monitor 24 pulg AON endura 240",
+            gender: 'monitor'
         },
         {
             description: "Introducing the Tesla Chill Collection. The Men’s Chill Quarter Zip Pullover has a premium, heavyweight exterior and soft fleece interior for comfort in any season. The pullover features subtle thermoplastic polyurethane Tesla logos on the left chest and below the back collar, as well as a custom matte zipper pull. Made from 60% cotton and 40% recycled polyester.",
             images: [
-                '1740145-00-A_2_2000.jpg',
-                '1740145-00-A_1.jpg',
+                'monitor_samsung_cf390_24.jpg',
+                'monitor_samsung_cf390_24_2.jpg',
             ],
             inStock: 15,
             price: 85,
@@ -382,14 +382,14 @@ export const initialData: SeedData = {
             slug: "men_chill_quarter_zip_pullover_-_white",
             type: 'shirts',
             tags: ['shirt'],
-            title: "Men's Chill Quarter Zip Pullover - White",
-            gender: 'desktop'
+            title: "Monitor curvo 24 pulg Samsung CF390",
+            gender: 'monitor'
         },
         {
             description: "The Unisex 3D Large Wordmark Pullover Hoodie features soft fleece and an adjustable, jersey-lined hood for comfort and coverage. Designed in a unisex style, the pullover hoodie includes a tone-on-tone 3D silicone-printed wordmark across the chest.",
             images: [
-                '8529107-00-A_0_2000.jpg',
-                '8529107-00-A_1.jpg',
+                'moitor ds-5022fn-c hikvision.jpg',
+                'moitor ds-5022fn-c hikvision_2.jpg',
             ],
             inStock: 15,
             price: 70,
@@ -397,44 +397,44 @@ export const initialData: SeedData = {
             slug: "3d_large_wordmark_pullover_hoodie",
             type: 'hoodies',
             tags: ['hoodie'],
-            title: "3D Large Wordmark Pullover Hoodie",
-            gender: 'all_in_one'
+            title: "Monitor 22 pulg Hikvision DS-5022fn-c",
+            gender: 'monitor'
         },
         {
-            description: "As with the iconic Tesla logo, the Cybertruck Graffiti Hoodie is a classic in the making. Unisex style featuring soft fleece and an adjustable, jersey-lined hood for comfortable coverage.",
+            description: "Impresora multifunción láser monocromática. Entre sus funciones: Impresión, copia, escaneo y fax. Capacidad de Hasta 21 páginas por minuto con una resolución de impresión de 1200 x 1200 ppp. Conectividad por via USB, Wi-Fi, Ethernet. Capacidad de la bandeja 150 hojas. Diseñada para ofrecer impresiones rápidas y de alta calidad. Garantia HP 12 meses",
             images: [
-                '7654420-00-A_0_2000.jpg',
-                '7654420-00-A_1_2000.jpg',
+                'impresora hp 137fnw.jpg',
+                'impresora hp 137fnw_2.jpg',
             ],
             inStock: 13,
-            price: 60,
+            price: 340,
             sizes: ['XS','S','M','L','XL','XXL'],
             slug: "cybertruck_graffiti_hoodie",
             type: 'hoodies',
             tags: ['hoodie'],
-            title: "Cybertruck Graffiti Hoodie",
-            gender: 'all_in_one'
+            title: "Multifuncional HP Laserjet 137FNW",
+            gender: 'impresora'
         },
         {
-            description: "The Relaxed T Logo Hat is a classic silhouette combined with modern details, featuring a 3D T logo and a custom metal buckle closure. The ultrasoft design is flexible and abrasion resistant, while the inner sweatband includes quilted padding for extra comfort and moisture wicking. The visor is fully made from recycled plastic bottles. 100% Cotton.",
+            description: "Con este Mini UPS garantizas al menos 5 horas de funcionamiento para tus equipos que te proporcionan la conexion a internet. Viene con salidas de 5v,9v y 12v para que conecetes tu modem ONU de fibra optica, un router y una antena POE. De esta maneras no pierdes la continuidad de tu señal para que puedas seguir ejerciendo tus labores diarias en medio de las fluctuaciones electricas.",
             images: [
-                '1657932-00-A_0_2000.jpg',
-                '1657932-00-A_1.jpg',
+                'mini ups begprod eco p18.jpg',
+                'mini ups begprod eco p18_2.jpg',
             ],
             inStock: 11,
-            price: 30,
+            price: 40,
             sizes: ['XS','S','M','L','XL','XXL'],
             slug: "relaxed_t_logo_hat",
             type: 'hats',
             tags: ['hats'],
-            title: "Relaxed T Logo Hat",
-            gender: 'all_in_one'
+            title: "Mini Ups Begprod Eco P18 12000 mah",
+            gender: 'otros'
         },
         {
-            description: "The Relaxed T Logo Hat is a classic silhouette combined with modern details, featuring a 3D T logo and a custom metal buckle closure. The ultrasoft design is flexible and abrasion resistant, while the inner sweatband includes quilted padding for extra comfort and moisture wicking. The visor is fully made from recycled plastic bottles. 100% Cotton.",
+            description: "Con este Mini UPS garantizas al menos 4 horas de funcionamiento para tus equipos que te proporcionan la conexion a internet. Viene con salidas de 5v,9v y 12v para que conecetes tu modem ONU de fibra optica, un router y una antena POE. De esta maneras no pierdes la continuidad de tu señal para que puedas seguir ejerciendo tus labores diarias en medio de las fluctuaciones electricas.",
             images: [
-                '1740417-00-A_0_2000.jpg',
-                '1740417-00-A_1.jpg',
+                'mini ups masriva.jpg',
+                'mini ups masriva_2.jpg',
             ],
             inStock: 13,
             price: 35,
@@ -442,29 +442,29 @@ export const initialData: SeedData = {
             slug: "thermal_cuffed_beanie",
             type: 'hats',
             tags: ['hats'],
-            title: "Thermal Cuffed Beanie",
-            gender: 'all_in_one'
+            title: "Mini Ups Masriva KP3 10000 mah",
+            gender: 'otros'
         },
         {
-            description: "The Women's Cropped Puffer Jacket features a uniquely cropped silhouette for the perfect, modern style while on the go during the cozy season ahead. The puffer features subtle silicone injected Tesla logos below the back collar and on the right sleeve, custom matte metal zipper pulls and a soft, fleece lined collar. Made from 87% nylon and 13% polyurethane.",
+            description: "Ups de 4 salidas que te permite respldar tus trabajos en caso de alguna falla electrica, cuenta con una capacidad de 600 watts y una autonomia de 12 minutos aproximadamente (monitor de 18.5 y cpu).Equipado con una bateria de 12v 9A este equipo te ofrece calidad y durabilidad.",
             images: [
-                '1740535-00-A_0_2000.jpg',
-                '1740535-00-A_1.jpg',
+                'ups_begprod_1000v_9a.jpg',
+                'ups_begprod_1000v_9a_2.jpg',
             ],
             inStock: 85,
-            price: 225,
+            price: 65,
             sizes: ['XS','S','M'],
             slug: "women_cropped_puffer_jacket",
             type: 'hoodies',
             tags: ['hoodie'],
-            title: "Women's Cropped Puffer Jacket",
-            gender: 'impresora'
+            title: "Ups Begprod 1000va 600w",
+            gender: 'otros'
         },
         {
-            description: "Introducing the Tesla Chill Collection. The Women's Chill Half Zip Cropped Hoodie has a premium, soft fleece exterior and cropped silhouette for comfort in everyday lifestyle. The hoodie features an elastic hem that gathers at the waist, subtle thermoplastic polyurethane Tesla logos along the hood and on the sleeve, a double layer single seam hood and a custom ring zipper pull. Made from 60% cotton and 40% recycled polyester.",
+            description: "Ups de 6 salidas que te permite respldar tus trabajos en caso de alguna falla electrica, cuenta con una capacidad de 900 watts y una autonomia de 20 minutos aproximadamente (monitor de 18.5 y cpu).Equipado con dos bateria de 12v 7A este equipo te ofrece calidad y durabilidad",
             images: [
-                '1740226-00-A_0_2000.jpg',
-                '1740226-00-A_1.jpg',
+                'ups_begprod_1500v.jpg',
+                'ups_begprod_1500v_2.jpg',
             ],
             inStock: 10,
             price: 130,
@@ -473,73 +473,73 @@ export const initialData: SeedData = {
             type: 'hoodies',
             tags: ['hoodie'],
             title: "Women's Chill Half Zip Cropped Hoodie",
-            gender: 'impresora'
+            gender: 'otros'
         },
         {
-            description: "Introducing the Tesla Raven Collection. The Women's Raven Slouchy Crew Sweatshirt has a premium, relaxed silhouette made from a sustainable bamboo cotton blend. The slouchy crew features a subtle thermoplastic polyurethane Tesla wordmark on the left sleeve and a french terry interior for a cozy look and feel in every season. Pair it with your Raven Joggers or favorite on the go fit. Made from 70% bamboo and 30% cotton.",
+            description: "Ups de 6 salidas que te permite respldar tus trabajos en caso de alguna falla electrica, cuenta con una capacidad de 1200 watts y una autonomia de 40 minutos aproximadamente (monitor de 18.5 y cpu).Equipado con dos bateria de 12v 9A este equipo te ofrece calidad y durabilidad. Ideal para la proteccion de equipos servidores de datos",
             images: [
-                '1740260-00-A_0_2000.jpg',
-                '1740260-00-A_1.jpg',
+                'ups_begprod_2000v.jpg',
+                'ups_begprod_2000v_2.jpg',
             ],
             inStock: 9,
-            price: 110,
+            price: 150,
             sizes: ['XS','S','M','L','XL','XXL'],
             slug: "women_raven_slouchy_crew_sweatshirt",
             type: 'hoodies',
             tags: ['hoodie'],
             title: "Women's Raven Slouchy Crew Sweatshirt",
-            gender: 'impresora'
+            gender: 'otros'
         },
         {
-            description: "Introducing the Tesla Turbine Collection. Designed for style, comfort and everyday lifestyle, the Women's Turbine Cropped Long Sleeve Tee features a subtle, water-based Tesla wordmark across the chest and our T logo below the back collar. The lightweight material is double-dyed, creating a soft, casual style with a cropped silhouette. Made from 50% cotton and 50%",
+            description: "Diseñada con los mejores componenetes esta bateria es el sustituto ideal para el reemplazo de tu bateria de Ups.Durabilidad garantizada, se adapta a dieferentes marcas de UPS",
             images: [
-                '1740290-00-A_0_2000.jpg',
-                '1740290-00-A_1.jpg',
+                'bateria_mca_12v_4.jpg',
+                'bateria_mca_12v_4_2.jpg',
             ],
             inStock: 10,
-            price: 45,
+            price: 20,
             sizes: ['XS','S','M','L','XL','XXL'],
             slug: "women_turbine_cropped_long_sleeve_tee",
             type: 'shirts',
             tags: ['shirt'],
-            title: "Women's Turbine Cropped Long Sleeve Tee",
-            gender: 'impresora'
+            title: "Bateria para UPS 12v 4ah MCA",
+            gender: 'otros'
         },
         {
-            description: "ntroducing the Tesla Turbine Collection. Designed for style, comfort and everyday lifestyle, the Women's Turbine Cropped Short Sleeve Tee features a subtle, water-based Tesla wordmark across the chest and our T logo below the back collar. The lightweight material is double-dyed, creating a soft, casual style with a cropped silhouette. Made from 50% cotton and 50% polyester.",
+            description: "Diseñada con los mejores componenetes esta bateria es el sustituto ideal para el reemplazo de tu bateria de Ups.Durabilidad garantizada, se adapta a dieferentes marcas de UPS",
             images: [
-                '1741441-00-A_0_2000.jpg',
-                '1741441-00-A_1.jpg',
+                'bateria_mca_12v_7.jpg',
+                'bateria_mca_12v_7_2.jpg',
             ],
             inStock: 0,
-            price: 40,
+            price: 25,
             sizes: ['XS','S'],
             slug: "women_turbine_cropped_short_sleeve_tee",
             type: 'shirts',
             tags: ['shirt'],
-            title: "Women's Turbine Cropped Short Sleeve Tee",
-            gender: 'impresora'
+            title: "Bateria para UPS 12v 7ah MCA",
+            gender: 'otros'
         },
         {
-            description: "Designed for style and comfort, the ultrasoft Women's T Logo Short Sleeve Scoop Neck Tee features a tonal 3D silicone-printed T logo on the left chest. Made of 50% Peruvian cotton and 50% Peruvian viscose.",
+            description: "Diseñada con los mejores componenetes esta bateria es el sustituto ideal para el reemplazo de tu bateria de Ups.Durabilidad garantizada, se adapta a dieferentes marcas de UPS",
             images: [
-                '8765090-00-A_0_2000.jpg',
-                '8765090-00-A_1.jpg',
+                'bateria_12v_9ah_1.jpg',
+                'bateria_12v_9ah_2.jpg',
             ],
             inStock: 30,
-            price: 35,
+            price: 30,
             sizes: ['XS','S','M','L','XL','XXL'],
             slug: "women_t_logo_short_sleeve_scoop_neck_tee",
             type: 'shirts',
             tags: ['shirt'],
-            title: "Women's T Logo Short Sleeve Scoop Neck Tee",
-            gender: 'impresora'
+            title: "Bateria para UPS 12v 9ah MCA",
+            gender: 'otros'
         },
         {
-            description: "Designed for style and comfort, the ultrasoft Women's T Logo Long Sleeve Scoop Neck Tee features a tonal 3D silicone-printed T logo on the left chest. Made of 50% Peruvian cotton and 50% Peruvian viscose.",
+            description: "Diseñada con los mejores componenetes esta bateria es el sustituto ideal para el reemplazo de tu bateria de Ups.Durabilidad garantizada, se adapta a dieferentes marcas de UPS",
             images: [
-                '8765100-00-A_0_2000.jpg',
-                '8765100-00-A_1.jpg',
+                'bateria_power_sonic_ps1280_1.jpg',
+                'bateria_power_sonic_ps1280_2.jpg',
             ],
             inStock: 16,
             price: 40,
@@ -547,44 +547,44 @@ export const initialData: SeedData = {
             slug: "women_t_logo_long_sleeve_scoop_neck_tee",
             type: 'shirts',
             tags: ['shirt'],
-            title: "Women's T Logo Long Sleeve Scoop Neck Tee",
-            gender: 'impresora'
+            title: "Bateria para UPS 12v 18ah Power Sonic",
+            gender: 'otros'
         },
         {
-            description: "Designed for style and comfort, the Women's Small Wordmark Short Sleeve V-Neck Tee features a tonal 3D silicone-printed wordmark on the left chest. Made of 100% Peruvian cotton.",
+            description: "Tinta original Epson compatibles con L3150, L5190, L1110, L3110, L3251, L3210, L1210, L3250 y L5290. Equipada con una boquilla que hace la recarga de la tinta mas rapida y efectiva",
             images: [
-                '8765120-00-A_0_2000.jpg',
-                '8765120-00-A_1.jpg',
+                'tinta_epson_544_1.jpg',
+                'tinta_epson_544_2.jpg',
             ],
             inStock: 18,
-            price: 35,
+            price: 15,
             sizes: ['XS','S','M','L','XL','XXL'],
             slug: "women_small_wordmark_short_sleeve_v-neck_tee",
             type: 'shirts',
             tags: ['shirt'],
-            title: "Women's Small Wordmark Short Sleeve V-Neck Tee",
-            gender: 'impresora'
+            title: "Tinta Epson Original 544",
+            gender: 'otros'
         },
         {
-            description: "Designed for style and comfort, the Women's Large Wordmark Short Sleeve Crew Neck Tee features a tonal 3D silicone-printed wordmark across the chest. Made of 100% Peruvian pima cotton.",
+            description: "Tinta original HP compatibles con Smart Tank 500; Smart Tank 508; Smart Tank 510; Smart Tank 511; Smart Tank 513; Smart Tank 514; Smart Tank 515; Smart Tank 517; Smart Tank 518; Smart Tank 519. Equipada con una boquilla que hace la recarga de la tinta mas rapida y efectiva.",
             images: [
-                '8765115-00-A_0_2000.jpg',
-                '8765115-00-A_1.jpg',
+                'tinta_hp_gt_52_53.jpg',
+                'tinta_hp_gt_52_53_2.jpg',
             ],
             inStock: 5,
-            price: 35,
+            price: 15,
             sizes: ['XL','XXL'],
             slug: "women_large_wordmark_short_sleeve_crew_neck_tee",
             type: 'shirts',
             tags: ['shirt'],
-            title: "Women's Large Wordmark Short Sleeve Crew Neck Tee",
-            gender: 'impresora'
+            title: "Tinta HP original GT52 GT53",
+            gender: 'otros'
         },
         {
             description: "Designed to celebrate Tesla's incredible performance mode, the Plaid Mode Tee features great fit, comfort and style. Made from 100% cotton, it's the next best thing to riding shotgun at the Nürburgring.",
             images: [
-                '1549275-00-A_0_2000.jpg',
-                '1549275-00-A_1.jpg',
+                'ac_1200_decco_m4_two.jpg',
+                'ac_1200_decco_m4_two_2.jpg',
             ],
             inStock: 16,
             price: 35,
@@ -592,14 +592,14 @@ export const initialData: SeedData = {
             slug: "women_plaid_mode_tee",
             type: 'shirts',
             tags: ['shirt'],
-            title: "Women's Plaid Mode Tee",
-            gender: 'impresora'
+            title: "Router Tp Link Decco M4 Two Pack",
+            gender: 'otros'
         },
         {
             description: "Inspired by our popular home battery, the Tesla Powerwall Tee is made from 100% cotton and features the phrase 'Pure Energy' under our signature logo in the back. Designed for fit, comfort and style, the exclusive tee promotes sustainable energy in any",
             images: [
-                '9877040-00-A_0_2000.jpg',
-                '9877040-00-A_1.jpg',
+                'ac_1200_decco_m5_tree.jpg',
+                'ac_1200_decco_m5_tree_2.jpg',
             ],
             inStock: 10,
             price: 130,
@@ -607,14 +607,14 @@ export const initialData: SeedData = {
             slug: "women_powerwall_tee",
             type: 'shirts',
             tags: ['shirt'],
-            title: "Women’s Powerwall Tee",
-            gender: 'desktop'
+            title: "Router Tp Link Decco M4 Three Pack",
+            gender: 'otros'
         },
         {
             description: "Fully customized and uniquely styled, the Women's Corp Jacket features a silicone-printed 'T' logo on the left chest and prominent Tesla wordmark across the back.",
             images: [
-                '5645680-00-A_0_2000.jpg',
-                '5645680-00-A_3.jpg',
+                'extensor_re450_tp_link.jpg',
+                'extensor_re450_tp_link_2.jpg',
             ],
             inStock: 3,
             price: 90,
@@ -622,14 +622,14 @@ export const initialData: SeedData = {
             slug: "women_corp_jacket",
             type: 'shirts',
             tags: ['shirt'],
-            title: "Women's Corp Jacket",
-            gender: 'desktop'
+            title: "Extensor Wifi RE450 Tp Link",
+            gender: 'otros'
         },
         {
             description: "Introducing the Tesla Raven Collection. The Women's Raven Joggers have a premium, relaxed silhouette made from a sustainable bamboo cotton blend. The joggers feature a subtle thermoplastic polyurethane Tesla wordmark and T logo and a french terry interior for a cozy look and feel in every season. Pair them with your Raven Slouchy Crew Sweatshirt, Raven Lightweight Zip Up Jacket or other favorite on the go fit. Made from 70% bamboo and 30% cotton.",
             images: [
-                '1740270-00-A_0_2000.jpg',
-                '1740270-00-A_1.jpg',
+                'audifono_logitech_h390.jpg',
+                'audifono_logitech_h390_2.jpg',
             ],
             inStock: 162,
             price: 100,
@@ -637,14 +637,14 @@ export const initialData: SeedData = {
             slug: "women_raven_joggers",
             type: 'shirts',
             tags: ['shirt'],
-            title: "Women's Raven Joggers",
-            gender: 'desktop'
+            title: "Audifonos Logitech H390",
+            gender: 'otros'
         },
         {
             description: "Designed for fit, comfort and style, the Kids Cybertruck Graffiti Long Sleeve Tee features a water-based Cybertruck graffiti wordmark across the chest, a Tesla wordmark down the left arm and our signature T logo on the back collar. Made from 50% cotton and 50% polyester.",
             images: [
-                '1742694-00-A_1_2000.jpg',
-                '1742694-00-A_3.jpg',
+                'barra_genius_100.jpg',
+                'barra_genius_100_2.jpg',
             ],
             inStock: 10,
             price: 30,
@@ -652,14 +652,14 @@ export const initialData: SeedData = {
             slug: "kids_cybertruck_long_sleeve_tee",
             type: 'shirts',
             tags: ['shirt'],
-            title: "Kids Cybertruck Long Sleeve Tee",
-            gender: 'desktop'
+            title: "Barra de sonido para Pc Genius 100",
+            gender: 'otros'
         },
         {
             description: "The Kids Scribble T Logo Tee is made from 100% Peruvian cotton and features a Tesla T sketched logo for every young artist to wear.",
             images: [
-                '8529312-00-A_0_2000.jpg',
-                '8529312-00-A_1.jpg',
+                'fuente_nexcom_650w.jpg',
+                'fuente_nexcom_650w_2.jpg',
             ],
             inStock: 0,
             price: 25,
@@ -667,14 +667,14 @@ export const initialData: SeedData = {
             slug: "kids_scribble_t_logo_tee",
             type: 'shirts',
             tags: ['shirt'],
-            title: "Kids Scribble T Logo Tee",
-            gender: 'desktop'
+            title: "Fuente de Poder 600w Nexcom",
+            gender: 'otros'
         },
         {
             description: "The Kids Cybertruck Tee features the iconic Cybertruck graffiti wordmark and is made from 100% Peruvian cotton for maximum comfort.",
             images: [
-                '8529342-00-A_0_2000.jpg',
-                '8529342-00-A_1.jpg',
+                'regulador_cdp_avr_1008.jpg',
+                'regulador_cdp_avr_1008_2.jpg',
             ],
             inStock: 10,
             price: 25,
@@ -682,14 +682,14 @@ export const initialData: SeedData = {
             slug: "kids_cybertruck_tee",
             type: 'shirts',
             tags: ['shirt'],
-            title: "Kids Cybertruck Tee",
-            gender: 'desktop'
+            title: "Regulador de Poder Cdp AVR 1008",
+            gender: 'otros'
         },
         {
             description: "The refreshed Kids Racing Stripe Tee is made from 100% Peruvian cotton, featuring a newly enhanced racing stripe with a brushed Tesla wordmark that's perfect for any speed racer.",
             images: [
-                '8529354-00-A_0_2000.jpg',
-                '8529354-00-A_1.jpg',
+                'regulador_cdp_avr_1808.jpg',
+                'regulador_cdp_avr_1808_2.jpg',
             ],
             inStock: 10,
             price: 30,
@@ -697,14 +697,14 @@ export const initialData: SeedData = {
             slug: "kids_racing_stripe_tee",
             type: 'shirts',
             tags: ['shirt'],
-            title: "Kids Racing Stripe Tee",
-            gender: 'desktop'
+            title: "Regulador de Poder Cdp AVR 1808",
+            gender: 'otros'
         },
         {
             description: "Designed for fit, comfort and style, the Tesla T Logo Tee is made from 100% Peruvian cotton and features a silicone-printed T Logo on the left chest.",
             images: [
-                '7652465-00-A_0_2000.jpg',
-                '7652465-00-A_1.jpg',
+                'tablet_amazon_fire_hd_8.jpg',
+                'tablet_amazon_fire_hd_8_2.jpg',
             ],
             inStock: 10,
             price: 30,
@@ -712,29 +712,14 @@ export const initialData: SeedData = {
             slug: "kids_3d_t_logo_tee",
             type: 'shirts',
             tags: ['shirt'],
-            title: "Kids 3D T Logo Tee",
-            gender: 'desktop'
-        },
-        {
-            description: "The checkered tee is made from long grain, GMO free Peruvian cotton. Peru is the only country in the world where cotton is picked by hand on a large scale. The 4,500-year-old tradition prevents damage to the fiber during the picking process and removes the need to use chemicals to open the cotton plants before harvest. This environmentally friendly process results in cotton that is soft, strong, and lustrous – and the tee will get even softer with every wash.",
-            images: [
-                '100042307_0_2000.jpg',
-                '100042307_alt_2000.jpg',
-            ],
-            inStock: 10,
-            price: 30,
-            sizes: ['XS','S','M'],
-            slug: "kids_checkered_tee",
-            type: 'shirts',
-            tags: ['shirt'],
-            title: "Kids Checkered Tee",
-            gender: 'desktop'
-        },
+            title: "Tablet Amazon Fire HD 8",
+            gender: 'otros'
+        },                
         {
             description: "For the future space traveler with discerning taste, a soft, cotton onesie with snap closure bottom. Clear labeling provided in case of contact with a new spacefaring civilization. 100% Cotton. Made in Peru",
             images: [
-                '1473809-00-A_1_2000.jpg',
-                '1473809-00-A_alt.jpg',
+                'disco_portable_seagate_2tb.jpg',
+                'disco_portable_seagate_2tb_2.jpg',
             ],
             inStock: 16,
             price: 25,
@@ -742,14 +727,14 @@ export const initialData: SeedData = {
             slug: "made_on_earth_by_humans_onesie",
             type: 'shirts',
             tags: ['shirt'],
-            title: "Made on Earth by Humans Onesie",
-            gender: 'desktop'
+            title: "Disco Duro Portable 2TB Seagate",
+            gender: 'otros'
         },
         {
             description: "The Kids Scribble T Logo Onesie is made from 100% Peruvian cotton and features a Tesla T sketched logo for every little artist to wear.",
             images: [
-                '8529387-00-A_0_2000.jpg',
-                '8529387-00-A_1.jpg',
+                'disco_portable_toshiba_1tb.jpg',
+                'disco_portable_toshiba_1tb_2.jpg',
             ],
             inStock: 0,
             price: 30,
@@ -757,14 +742,14 @@ export const initialData: SeedData = {
             slug: "scribble_t_logo_onesie",
             type: 'shirts',
             tags: ['shirt'],
-            title: "Scribble T Logo Onesie",
-            gender: 'desktop'
+            title: "Disco Portable 1TB Toshiba Canvio",
+            gender: 'otros'
         },
         {
             description: "Show your commitment to sustainable energy with this cheeky onesie for your young one. Note: Does not prevent emissions. 100% Cotton. Made in Peru.",
             images: [
-                '1473834-00-A_2_2000.jpg',
-                '1473829-00-A_2_2000.jpg',
+                'camara_genius_1000x_1.jpg',
+                'camara_genius_1000x_2.jpg',
             ],
             inStock: 10,
             price: 30,
@@ -772,14 +757,14 @@ export const initialData: SeedData = {
             slug: "zero_emissions_(almost)_onesie",
             type: 'shirts',
             tags: ['shirt'],
-            title: "Zero Emissions (Almost) Onesie",
-            gender: 'desktop'
+            title: "WebCam Genius Face 1000x",
+            gender: 'otros'
         },
         {
             description: "Wear your Kids Cyberquad Bomber Jacket during your adventures on Cyberquad for Kids. The bomber jacket features a graffiti-style illustration of our Cyberquad silhouette and wordmark. With three zippered pockets and our signature T logo and Tesla wordmark printed along the sleeves, Kids Cyberquad Bomber Jacket is perfect for wherever the trail takes you. Made from 60% cotton and 40% polyester.",
             images: [
-                '1742702-00-A_0_2000.jpg',
-                '1742702-00-A_1.jpg',
+                'combo_logitech_mk235.jpg',
+                'combo_logitech_mk235_1.jpg',
             ],
             inStock: 10,
             price: 65,
@@ -787,14 +772,14 @@ export const initialData: SeedData = {
             slug: "kids_cyberquad_bomber_jacket",
             type: 'shirts',
             tags: ['shirt'],
-            title: "Kids Cyberquad Bomber Jacket",
-            gender: 'laptop'
+            title: "Teclado Mouse Logitech Inalambrico Mk235",
+            gender: 'otros'
         },
         {
             description: "Cruise the playground in style with the Kids Corp Jacket. Modeled after the original Tesla Corp Jacket, the Kids Corp Jacket features the same understated style and high-quality materials but at a pint-sized scale.",
             images: [
-                '1506211-00-A_0_2000.jpg',
-                '1506211-00-A_1_2000.jpg',
+                'disco_ssd_crucial_960.jpg',
+                'disco_ssd_crucial_960_2.jpg',
             ],
             inStock: 10,
             price: 30,
@@ -802,8 +787,38 @@ export const initialData: SeedData = {
             slug: "kids_corp_jacket",
             type: 'shirts',
             tags: ['shirt'],
-            title: "Kids Corp Jacket",
-            gender: 'impresora'
+            title: "Disco Duro 960gb SSD Crucial",
+            gender: 'otros'
+        },
+        {
+            description: "Cruise the playground in style with the Kids Corp Jacket. Modeled after the original Tesla Corp Jacket, the Kids Corp Jacket features the same understated style and high-quality materials but at a pint-sized scale.",
+            images: [
+                'memoria_32gb_ddr4_jemip.jpg',
+                'memoria_32gb_ddr4_jemip_2.jpg',
+            ],
+            inStock: 10,
+            price: 30,
+            sizes: ['XS','S','M'],
+            slug: "memoria_32gb_jemip",
+            type: 'shirts',
+            tags: ['shirt'],
+            title: "Memoria ram DDR4 32 GB para Pc",
+            gender: 'otros'
+        },
+        {
+            description: "Cruise the playground in style with the Kids Corp Jacket. Modeled after the original Tesla Corp Jacket, the Kids Corp Jacket features the same understated style and high-quality materials but at a pint-sized scale.",
+            images: [
+                'mouse_logitech_m170.jpg',
+                'mouse_logitech_m170_2.jpg',
+            ],
+            inStock: 10,
+            price: 30,
+            sizes: ['XS','S','M'],
+            slug: "mouse_logitech_m170",
+            type: 'shirts',
+            tags: ['shirt'],
+            title: "Mouse Logitech M170 Inalambrico",
+            gender: 'otros'
         },
     ]
 }

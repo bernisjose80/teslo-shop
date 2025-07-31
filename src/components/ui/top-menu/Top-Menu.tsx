@@ -46,15 +46,21 @@ export default function TopMenu() {
         </Link>
         <Link
           className="text-blue-600 m-2 p-2 rounded-md transition-all hover:bg-gray-100"
-          href="/category/all_in_one"
+          href="/category/monitor"
         >
-          All-in-One
+          Monitores
         </Link>
         <Link
           className="text-blue-600 m-2 p-2 rounded-md transition-all hover:bg-gray-100"
           href="/category/impresora"
         >
           Impresoras
+        </Link>
+        <Link
+          className="text-blue-600 m-2 p-2 rounded-md transition-all hover:bg-gray-100"
+          href="/category/otros"
+        >
+          Otros
         </Link>
       </div>
 
