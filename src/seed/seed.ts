@@ -101,7 +101,7 @@ export const initialData: SeedData = {
             gender: 'laptop'
         },
         {
-            description: "Designed for comfort, the Cybertruck Owl Tee is made from 100% cotton and features our signature Cybertruck icon on the back.",
+            description: "Para los usuarios que requieren un equipo para tareas de mediana exigencia. Equipado con un Intel Core i3-N305 (8C / 8T, Max Turbo up to 3.8GHz, 6MB), Memoria Ram 8GB Soldada LPDDR5-4800, Disco SSD 256GB SSD M.2 2242 PCIe 4.0x4 NVMe, Grafica de video integrada Intel UHD Graphics, Windows 11 Home. Garantia 12 meses",
             images: [
                 'laptop_82xboolus_2.jpg',
                 'laptop_82xboolus_1.jpg',
